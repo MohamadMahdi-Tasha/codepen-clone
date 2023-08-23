@@ -51,16 +51,16 @@ export default function HeaderComponent():ReactNode {
                 </div>
             </div>
             <ul className={'mb-[20px]'}>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Your Work</button></a></li>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Activity</button></a></li>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Assets</button></a></li>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Pinned Items</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Your Work</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Activity</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Assets</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Pinned Items</button></a></li>
             </ul>
             <ul className={'mb-[20px]'}>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Following</button></a></li>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Trending</button></a></li>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Challenges</button></a></li>
-                <li><a className={'block'} href="#"><button className={'transition-all hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Spark</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Following</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Trending</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Challenges</button></a></li>
+                <li><a className={'block'} href="#"><button className={'transition-all w-full text-start hover:bg-mainBg truncate text-[16px] font-normal px-[20px] py-[10px] text-white'} tabIndex={-1}>Spark</button></a></li>
             </ul>
             <a href="#" className={'block'}>
                 <button tabIndex={-1} className={'transition-all hover:bg-mainBg w-full flex flex-wrap gap-[10px] items-center px-[20px] py-[10px]'}>
