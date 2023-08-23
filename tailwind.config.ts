@@ -18,4 +18,4 @@ const config: Config = {
 }
 
 // Exporting Configs
-export default config
+export default config;
