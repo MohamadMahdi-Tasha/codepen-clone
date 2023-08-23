@@ -1,0 +1,21 @@
+{
+  "name": "CodePen Clone - Made By Mahdi Tasha",
+  "short_name": "CodePen Clone",
+  "orientation": "vertical",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e1e1e",
+  "background_color": "#1e1e1e",
+  "icons": [
+    {
+      "src": "./assets/img/manifest/img-logo-192.ico",
+      "sizes": "192x192",
+      "type": "Image/ico"
+    },
+    {
+      "src": "./assets/img/manifest/img-logo-256.ico",
+      "sizes": "256x256",
+      "type": "Image/ico"
+    }
+  ]
+}
