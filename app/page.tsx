@@ -1,7 +1,7 @@
 // Codes BY Mahdi Tasha
 // Importing Part
 import {ReactNode} from "react";
-import HeaderComponent from '@/components/headerComponent';\
+import HeaderComponent from '@/components/headerComponent';
 import '@/app/index.css';
 
 // Creating And Exporting Home Page Of Project As Default
