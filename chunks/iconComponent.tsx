@@ -21,5 +21,7 @@ export default function IconComponent({name, className}:propsType):ReactNode {
         return <svg className={className} width="20" height="20" fill='currentColor' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><rect y="10.36" width="9.64" height="9.64" rx="1" ry="1"></rect><rect x="10.36" y="10.36" width="9.64" height="9.64" rx="1" ry="1"></rect><rect width="9.64" height="9.64" rx="1" ry="1"></rect><rect x="10.36" width="9.64" height="9.64" rx="1" ry="1"></rect></svg>
     } else if (name === 'vue') {
         return <svg xmlns="http://www.w3.org/2000/svg" width='20' height='20' viewBox="0 -10 196.32 190.02"><path fill="#42b883" d="M120.83 0 98.16 39.26 75.49 0H0l98.16 170.02L196.32 0h-75.49z"></path><path fill="#35495e" d="M120.83 0 98.16 39.26 75.49 0H39.26l58.9 102.01L157.06 0h-36.23z"></path></svg>
+    } else if (name === 'toggle-nav') {
+        return <svg className={className} xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fillRule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"/></svg>
     }
 }
