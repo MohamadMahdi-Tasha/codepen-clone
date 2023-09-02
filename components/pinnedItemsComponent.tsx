@@ -15,7 +15,7 @@ export default function pinnedItemsComponent():ReactNode {
     // Returning JSX
     return (
         <div>
-            <button data-opened={isModalOpened} className={'bg-dropdownBg/30 aspect-square h-full items-center flex justify-center p-[10px] relative rounded-[10px] green-bar-data-opened'} onClick={() => setModalOpened(true)}>
+            <button data-opened={isModalOpened} className={'bg-dropdownBg/30 items-center h-[50px] aspect-square flex justify-center px-[10px] relative rounded-[10px] green-bar-data-opened'} onClick={() => setModalOpened(true)}>
                 <IconComponent className={'text-white'} name={'pin'} />
                 <IconComponent className={'text-white'} name={'chevron-down'} />
             </button>

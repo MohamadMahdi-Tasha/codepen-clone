@@ -4,6 +4,7 @@ import {ReactNode} from "react";
 import HeaderComponent from '@/components/headerComponent';
 import SearchComponent from '@/components/searchComponent';
 import PinnedItemsComponent from '@/components/pinnedItemsComponent';
+import ProfileDropDownComponent from '@/components/profileDropDownComponent';
 import '@/app/index.css';
 
 // Creating And Exporting Home Page Of Project As Default
@@ -16,6 +17,7 @@ export default function HomePage():ReactNode {
                 <header className={'flex gap-[15px]'}>
                     <SearchComponent />
                     <PinnedItemsComponent />
+                    <ProfileDropDownComponent />
                 </header>
             </section>
         </div>

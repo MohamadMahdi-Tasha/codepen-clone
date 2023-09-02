@@ -15,7 +15,7 @@ export default function SearchComponent():ReactNode {
     // Returning JSX
     return (
         <div className={'relative w-full'}>
-            <form className={'bg-dropdownBg/30 w-full shadow-lg rounded-[7px] flex items-center gap-[20px] p-[12px]'} action={'#'}>
+            <form className={'bg-dropdownBg/30 w-full shadow-lg rounded-[7px] flex items-center gap-[20px] px-[10px] h-[50px]'} action={'#'}>
                 <label htmlFor={"search-input"}>
                     <IconComponent name={'search'} className={'text-dropdownBg'} />
                 </label>
