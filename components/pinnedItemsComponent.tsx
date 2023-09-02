@@ -10,12 +10,12 @@ import NoPinImg from '@/public/assets/img/pins/img-nopin.webp';
 // Creating And Exporting Pinned Items Component As Default
 export default function pinnedItemsComponent():ReactNode {
     // Defining State Of Components
-    const [isModalOpened, setModalOpened] = useState(true);
+    const [isModalOpened, setModalOpened] = useState(false);
 
     // Returning JSX
     return (
         <div>
-            <button className={'bg-dropdownBg/30 aspect-square h-full items-center flex justify-center p-[10px] rounded-[10px]'} onClick={() => setModalOpened(true)}>
+            <button data-opened={isModalOpened} className={'bg-dropdownBg/30 aspect-square h-full items-center flex justify-center p-[10px] relative rounded-[10px] green-bar-data-opened'} onClick={() => setModalOpened(true)}>
                 <IconComponent className={'text-white'} name={'pin'} />
                 <IconComponent className={'text-white'} name={'chevron-down'} />
             </button>

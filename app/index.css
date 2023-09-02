@@ -13,3 +13,4 @@
 .before-gradiant-bar {@apply before:content-[""] before:w-full before:h-[2px] before:block;}
 .custom-scrollbar::-webkit-scrollbar {background-color: transparent;width: 8px;}
 .custom-scrollbar::-webkit-scrollbar-thumb {@apply bg-dropdownBg}
+.green-bar-data-opened {@apply after:transition-all after:content-[""] after:h-[2px] after:bg-green after:absolute after:left-0 after:top-[110%] data-[opened="true"]:after:w-full data-[opened="false"]:after:w-0;}
