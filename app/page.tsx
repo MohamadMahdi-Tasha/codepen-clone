@@ -13,7 +13,7 @@ export default function HomePage():ReactNode {
         <div className={'flex'}>
             <HeaderComponent />
             <section className={'w-full bg-mainBg p-[20px] h-[100vh] overflow-x-hidden overflow-y-auto'}>
-                <header>
+                <header className={'flex gap-[15px]'}>
                     <SearchComponent />
                     <PinnedItemsComponent />
                 </header>
