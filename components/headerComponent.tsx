@@ -10,7 +10,7 @@ import DropdownComponent from "@/chunks/dropdownComponent";
 import IconComponent from "@/chunks/iconComponent";
 import SquarSpaceImage from '@/public/assets/img/header/img-squarspace.png';
 
-// Creating And Exporting Header Component AsDefault
+// Creating And Exporting Header Component As Default
 export default function HeaderComponent():ReactNode {
     // Defining State Of Component
     const [isToggleNavClicked, setToggleNavClicked] = useState(false);
