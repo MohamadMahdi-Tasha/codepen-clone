@@ -11,7 +11,7 @@ export default function HomePage():ReactNode {
     return (
         <div className={'flex'}>
             <HeaderComponent />
-            <section>
+            <section className={'w-full bg-mainBg p-[20px]'}>
                 <header>
                     <SearchComponent />
                 </header>

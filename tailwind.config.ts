@@ -24,6 +24,7 @@ const config: Config = {
           purple: 'hsl(274.88deg 70.49% 64.12%)',
           yellow: 'hsl(49.32deg 100% 62.55%)',
           blue: 'hsl(196.18deg 100% 52.75%)',
+          transparent: 'transparent',
       }
   },
   plugins: [],
