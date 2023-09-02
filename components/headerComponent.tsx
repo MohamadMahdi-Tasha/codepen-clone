@@ -17,8 +17,8 @@ export default function HeaderComponent():ReactNode {
 
     // Returning JSX
     return (
-        <header data-toggled={isToggleNavClicked} className={'h-full w-[200px] bg-headerBg fixed top-0 transition-all duration-500 data-[toggled="false"]:left-0 data-[toggled="true"]:left-[-200px]'}>
-            <button onClick={() => setToggleNavClicked(prevState => !prevState)} className={'absolute top-[20px] -right-[30px] w-[30px] h-[30px] bg-dropdownBg rounded-r-[5px] flex justify-center items-center'}>
+        <header data-toggled={isToggleNavClicked} className={'h-[100vh] bg-headerBg top-0 transition-all duration-500 data-[toggled="false"]:w-[200px] data-[toggled="true"]:w-0 relative [&>button:first-of-type]:hover:visible [&>button:first-of-type]:hover:opacity-100 [&>button:first-of-type]:hover:right-[-30px]'}>
+            <button data-toggled={isToggleNavClicked} onClick={() => setToggleNavClicked(prevState => !prevState)} className={'absolute duration-500 top-[20px] w-[30px] h-[30px] bg-dropdownBg rounded-r-[5px] flex justify-center items-center transition-all data-[toggled="false"]:invisible data-[toggled="false"]:right-0 data-[toggled="false"]:opacity-0 data-[toggled="true"]:visible data-[toggled="true"]:right-[-30px] data-[toggled="true"]:opacity-100'}>
                 <IconComponent name={'toggle-nav'} className={'text-white w-[20px]'} />
             </button>
             <div className={'overflow-x-hidden overflow-y-auto custom-scrollbar flex flex-col justify-between h-full '}>

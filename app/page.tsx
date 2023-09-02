@@ -8,9 +8,11 @@ import '@/app/index.css';
 export default function HomePage():ReactNode {
     // Returning JSX
     return (
-        <>
+        <div className={'flex'}>
             <HeaderComponent />
-            <h1>Home Page</h1>
-        </>
+            <section>
+                <header></header>
+            </section>
+        </div>
     );
 }
