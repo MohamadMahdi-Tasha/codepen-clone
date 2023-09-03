@@ -11,6 +11,7 @@ import ProfileDropDownComponent from '@/components/profileDropDownComponent';
 import PenComponent from "@/components/penComponent";
 import ProfileImage from '@/public/assets/img/img-profile.jpg';
 import PeopleProfileComponent from "@/components/peopleProfileComponent";
+import FooterComponent from "@/components/footerComponent";
 import '@/app/index.css';
 
 // Creating And Exporting Home Page Of Project As Default
@@ -22,47 +23,50 @@ export default function HomePage():ReactNode {
     return (
         <div className={'flex'}>
             <HeaderComponent />
-            <section className={'w-full bg-mainBg p-[20px] h-[100vh] overflow-x-hidden overflow-y-auto'}>
-                <header className={'flex gap-[15px] mb-[20px]'}>
-                    <SearchComponent />
-                    <PinnedItemsComponent />
-                    <ProfileDropDownComponent />
-                </header>
-                <main>
-                    <div className={'mx-auto max-w-[1100px]'}>
-                        <div className={'overflow-x-auto overflow-y-hidden'}>
-                            <div className={'flex border-b-2 border-b-dropdownBg'}>
-                                <button onClick={() => setActivePensToShow('following')} data-active={(activePensToShow === 'following')} className={'py-[10px] whitespace-nowrap bg-transparent px-[25px] text-[20px] text-dropdownBg data-[active="true"]:text-white shrink-0 relative data-[active="true"]:after:content-[""] data-[active="true"]:after:absolute data-[active="true"]:after:top-full data-[active="true"]:after:left-0 data-[active="true"]:after:w-full data-[active="true"]:after:h-[2px] data-[active="true"]:after:bg-green'}>Following</button>
-                                <button onClick={() => setActivePensToShow('trending')} data-active={(activePensToShow === 'trending')} className={'py-[10px] whitespace-nowrap bg-transparent px-[25px] text-[20px] text-dropdownBg data-[active="true"]:text-white shrink-0 relative data-[active="true"]:after:content-[""] data-[active="true"]:after:absolute data-[active="true"]:after:top-full data-[active="true"]:after:left-0 data-[active="true"]:after:w-full data-[active="true"]:after:h-[2px] data-[active="true"]:after:bg-green'}>Trending</button>
-                                <button onClick={() => setActivePensToShow('to-work')} data-active={(activePensToShow === 'to-work')} className={'py-[10px] whitespace-nowrap bg-transparent px-[25px] text-[20px] text-dropdownBg data-[active="true"]:text-white shrink-0 relative data-[active="true"]:after:content-[""] data-[active="true"]:after:absolute data-[active="true"]:after:top-full data-[active="true"]:after:left-0 data-[active="true"]:after:w-full data-[active="true"]:after:h-[2px] data-[active="true"]:after:bg-green'}>Your Work</button>
+            <section className={'w-full bg-mainBg h-[100vh] overflow-x-hidden overflow-y-auto'}>
+                <div className={'p-[20px]'}>
+                    <header className={'flex gap-[15px] mb-[20px]'}>
+                        <SearchComponent />
+                        <PinnedItemsComponent />
+                        <ProfileDropDownComponent />
+                    </header>
+                    <main>
+                        <div className={'mx-auto max-w-[1100px]'}>
+                            <div className={'overflow-x-auto overflow-y-hidden'}>
+                                <div className={'flex border-b-2 border-b-dropdownBg'}>
+                                    <button onClick={() => setActivePensToShow('following')} data-active={(activePensToShow === 'following')} className={'py-[10px] whitespace-nowrap bg-transparent px-[25px] text-[20px] text-dropdownBg data-[active="true"]:text-white shrink-0 relative data-[active="true"]:after:content-[""] data-[active="true"]:after:absolute data-[active="true"]:after:top-full data-[active="true"]:after:left-0 data-[active="true"]:after:w-full data-[active="true"]:after:h-[2px] data-[active="true"]:after:bg-green'}>Following</button>
+                                    <button onClick={() => setActivePensToShow('trending')} data-active={(activePensToShow === 'trending')} className={'py-[10px] whitespace-nowrap bg-transparent px-[25px] text-[20px] text-dropdownBg data-[active="true"]:text-white shrink-0 relative data-[active="true"]:after:content-[""] data-[active="true"]:after:absolute data-[active="true"]:after:top-full data-[active="true"]:after:left-0 data-[active="true"]:after:w-full data-[active="true"]:after:h-[2px] data-[active="true"]:after:bg-green'}>Trending</button>
+                                    <button onClick={() => setActivePensToShow('to-work')} data-active={(activePensToShow === 'to-work')} className={'py-[10px] whitespace-nowrap bg-transparent px-[25px] text-[20px] text-dropdownBg data-[active="true"]:text-white shrink-0 relative data-[active="true"]:after:content-[""] data-[active="true"]:after:absolute data-[active="true"]:after:top-full data-[active="true"]:after:left-0 data-[active="true"]:after:w-full data-[active="true"]:after:h-[2px] data-[active="true"]:after:bg-green'}>Your Work</button>
+                                </div>
+                            </div>
+                            <div className={'mb-[40px] pt-[70px] pb-[20px] overflow-x-auto'}>
+                                <div className={'flex gap-[30px] mb-[30px]'}>
+                                    <PenComponent isPickedByCodePen={true} name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                </div>
+                                <div className={'flex gap-[30px]'}>
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                </div>
+                            </div>
+                            <div>
+                                <div className={'border-b-2 border-b-dropdownBg pb-[10px] mb-[30px]'}><span className={'text-[20px] font-bold text-white'}>Interesting People to Follow</span></div>
+                                <div className={'grid grid-cols-3 gap-[30px]'}>
+                                    <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
+                                    <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
+                                    <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
+                                </div>
                             </div>
                         </div>
-                        <div className={'mb-[40px] pt-[70px] pb-[20px] overflow-x-auto'}>
-                            <div className={'flex gap-[30px] mb-[30px]'}>
-                                <PenComponent isPickedByCodePen={true} name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                            </div>
-                            <div className={'flex gap-[30px]'}>
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                            </div>
-                        </div>
-                        <div>
-                            <div className={'border-b-2 border-b-dropdownBg pb-[10px] mb-[30px]'}><span className={'text-[20px] font-bold text-white'}>Interesting People to Follow</span></div>
-                            <div className={'grid grid-cols-3 gap-[30px]'}>
-                                <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
-                                <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
-                                <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
-                            </div>
-                        </div>
-                    </div>
-                </main>
+                    </main>
+                </div>
+                <FooterComponent />
             </section>
         </div>
     );
