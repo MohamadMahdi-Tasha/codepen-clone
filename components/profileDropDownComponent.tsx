@@ -29,7 +29,7 @@ export default function ProfileDropDownComponent():ReactNode {
                 <ul>
                     <li><a href="#"><button className={'py-[5px] px-[15px] text-[13px] transition-all bg-headerBg hover:bg-mainBg text-white font-bold truncate w-full text-start'} tabIndex={-1}>Asset Manager</button></a></li>
                     <li><a href="#"><button className={'py-[5px] px-[15px] text-[13px] transition-all bg-headerBg hover:bg-mainBg text-white font-bold truncate w-full text-start'} tabIndex={-1}>Embed Theme Builder</button></a></li>
-                    <li><a href="#"><button className={'py-[5px] px-[15px] text-[13px] transition-all bg-headerBg hover:bg-mainBg text-white font-bold truncate w-full text-start'} tabIndex={-1}>Upgrade To <span>Pro</span></button></a></li>
+                    <li><a href="#"><button className={'py-[5px] px-[15px] text-[13px] transition-all bg-headerBg hover:bg-mainBg text-white font-bold w-full text-start flex items-center'} tabIndex={-1}><span className={'truncate'}>Upgrade To</span><span className={'bg-yellow ml-[10px] text-black text-[10px] block px-[10px]'}>Pro</span></button></a></li>
                 </ul>
                 <hr className={'border-white/10 my-[10px]'} />
                 <ul>
