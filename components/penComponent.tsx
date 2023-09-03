@@ -60,7 +60,7 @@ export default function PenComponent({
                         <div className={'flex items-center justify-between gap-[10px]'}>
                             <div className={'flex items-center gap-[10px] w-full'}>
                                 <a href="#">
-                                    <img className={'aspect-square w-[60px] rounded-[10px]'} src={profileImage} alt={`${name}'s Profile Image`} />
+                                    <img className={'aspect-square w-[60px] h-[60px] rounded-[10px]'} src={profileImage} alt={`${name}'s Profile Image`} />
                                 </a>
                                 <div>
                                     <span className={'block mb-[3px] font-bold text-white text-[16px] truncate'}>{title}</span>
@@ -88,15 +88,15 @@ export default function PenComponent({
                         <div className={'flex gap-[10px] mt-[20px] opacity-0 -translate-y-[10px] invisible bottom-btns-holder duration-500 transition-all'}>
                             <button className={'bg-dropdownBg flex items-center gap-[10px] px-[15px] py-[5px] rounded-[8px]'}>
                                 <IconComponent name={'heart'} className={'text-white'} />
-                                <span className={'text-white'}>{likesCount}</span>
+                                <span className={'text-white'}>{(likesCount > 500) ? '500+' : likesCount}</span>
                             </button>
                             <button className={'bg-dropdownBg flex items-center gap-[10px] px-[15px] py-[5px] rounded-[8px]'}>
                                 <IconComponent name={'comment'} className={'text-white'} />
-                                <span className={'text-white'}>{commentsCount}</span>
+                                <span className={'text-white'}>{(commentsCount > 500) ? '500+' : commentsCount}</span>
                             </button>
                             <button className={'bg-dropdownBg flex items-center gap-[10px] px-[15px] py-[5px] rounded-[8px]'}>
                                 <IconComponent name={'eye'} className={'text-white'} />
-                                <span className={'text-white'}>{viewCount}</span>
+                                <span className={'text-white'}>{(viewCount > 500) ? '500+' : viewCount}</span>
                             </button>
                         </div>
                     </div>

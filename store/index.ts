@@ -10,7 +10,8 @@ const appSlice:Slice = createSlice({
         users: [
             {
                 profileImage: ProfileImage.src,
-                name: 'Mahdi Tasha',
+                name: 'MahdiTasha',
+                isPro: false,
                 id: 'tashaDev',
                 location: 'Iran, Tehran',
                 bio: 'junior font end developer :))',
@@ -22,6 +23,7 @@ const appSlice:Slice = createSlice({
                     {
                         profileImage: ProfileImage.src,
                         name: 'NoBody',
+                        isPro: false,
                         id: 'Anonymous',
                         location: 'Heaven',
                         followersCount: 1,
@@ -51,19 +53,24 @@ const appSlice:Slice = createSlice({
                         likesCount: 536,
                         commentsCount: 536,
                         viewCount: 536,
+                        author: 'MahdiTasha',
+                        profileImage: ProfileImage.src,
+                        id: 'tashaDev',
                     }
                 ]
             },
             {
                 profileImage: ProfileImage.src,
                 name: 'NoBody',
+                isPro: false,
                 id: 'Anonymous',
                 location: 'Heaven',
                 following: [],
                 followers: [
                     {
                         profileImage: ProfileImage.src,
-                        name: 'Mahdi Tasha',
+                        name: 'MahdiTasha',
+                        isPro: false,
                         id: 'tashaDev',
                         location: 'Iran, Tehran',
                         bio: 'junior font end developer :))',
@@ -75,6 +82,7 @@ const appSlice:Slice = createSlice({
                             {
                                 profileImage: ProfileImage.src,
                                 name: 'NoBody',
+                                isPro: false,
                                 id: 'Anonymous',
                                 location: 'Heaven',
                                 followersCount: 1,
@@ -119,6 +127,9 @@ const appSlice:Slice = createSlice({
                         likesCount: 1002344234217,
                         commentsCount: 112345687,
                         viewCount: 53100003240006,
+                        author: 'NoBody',
+                        profileImage: ProfileImage.src,
+                        id: 'Anonymous',
                     }
                 ]
             }

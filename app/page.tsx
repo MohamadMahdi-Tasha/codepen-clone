@@ -12,12 +12,18 @@ import PenComponent from "@/components/penComponent";
 import ProfileImage from '@/public/assets/img/img-profile.jpg';
 import PeopleProfileComponent from "@/components/peopleProfileComponent";
 import FooterComponent from "@/components/footerComponent";
+import {useSelector} from "react-redux";
 import '@/app/index.css';
 
 // Creating And Exporting Home Page Of Project As Default
 export default function HomePage():ReactNode {
     // Defining States Of Component
     const [activePensToShow, setActivePensToShow] = useState('trending');
+
+    // Redux Part
+    const state:any = useSelector(state => state);
+    const users:[] = state.users;
+    const pensOfUsers:any = users.map((item:any) => item.pens)
 
     // Returning JSX
     return (
@@ -41,26 +47,35 @@ export default function HomePage():ReactNode {
                             </div>
                             <div className={'mb-[40px] pt-[70px] pb-[20px] overflow-x-auto'}>
                                 <div className={'flex gap-[30px] mb-[30px]'}>
-                                    <PenComponent isPickedByCodePen={true} name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                </div>
-                                <div className={'flex gap-[30px]'}>
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
-                                    <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
+                                    {
+                                        pensOfUsers.map((item:any) =>  (
+                                            <PenComponent name={item[0].author}
+                                                          viewCount={item[0].viewCount}
+                                                          likesCount={item[0].likesCount}
+                                                          commentsCount={item[0].commentsCount}
+                                                          profileImage={item[0].profileImage}
+                                                          isPickedByCodePen={item[0].isPickedByCodePen}
+                                                          id={item[0].id}
+                                                          title={item[0].name}
+                                                          cssCode={item[0].cssCode}
+                                                          htmlCode={item[0].htmlCode}
+                                            />
+                                        ))
+                                    }
                                 </div>
                             </div>
                             <div>
                                 <div className={'border-b-2 border-b-dropdownBg pb-[10px] mb-[30px]'}><span className={'text-[20px] font-bold text-white'}>Interesting People to Follow</span></div>
                                 <div className={'grid grid-cols-3 gap-[30px]'}>
-                                    <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
-                                    <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
-                                    <PeopleProfileComponent profileImage={ProfileImage.src} isPro={true} pensCount={210} name={'magnificode'} />
+                                    {
+                                        users.map((item:any) => (
+                                            <PeopleProfileComponent profileImage={item.profileImage}
+                                                                    isPro={item.isPro}
+                                                                    pensCount={item.pens.length}
+                                                                    name={item.name}
+                                            />
+                                        ))
+                                    }
                                 </div>
                             </div>
                         </div>

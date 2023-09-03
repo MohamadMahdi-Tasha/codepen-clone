@@ -2,6 +2,7 @@
 // Importing Part
 import {Metadata} from "next";
 import {ReactNode} from "react";
+import LayoutProviderComponent from "@/components/layoutProviderComponent";
 
 // Defining Meta Data Of Pages
 export const metadata:Metadata = {
@@ -25,9 +26,11 @@ export default function RootLayout({children}:propsType):ReactNode {
     // Returning JSX
     return (
         <html lang={'en'}>
-            <body>
-                {children}
-            </body>
+            <LayoutProviderComponent>
+                <body>
+                    {children}
+                </body>
+            </LayoutProviderComponent>
         </html>
     );
 }
