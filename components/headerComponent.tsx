@@ -21,7 +21,7 @@ export default function HeaderComponent():ReactNode {
             <button data-toggled={isToggleNavClicked} onClick={() => setToggleNavClicked(prevState => !prevState)} className={'absolute duration-500 top-[20px] w-[30px] h-[30px] bg-dropdownBg rounded-r-[5px] flex justify-center items-center transition-all data-[toggled="false"]:invisible data-[toggled="false"]:right-0 data-[toggled="false"]:opacity-0 data-[toggled="true"]:visible data-[toggled="true"]:right-[-30px] data-[toggled="true"]:opacity-100'}>
                 <IconComponent name={'toggle-nav'} className={'text-white w-[20px]'} />
             </button>
-            <div className={'overflow-x-hidden overflow-y-auto custom-scrollbar flex flex-col justify-between h-full '}>
+            <div className={'overflow-x-hidden w-full overflow-y-auto custom-scrollbar flex flex-col justify-between h-full '}>
                 <div>
                     <div className={'p-[20px]'}>
                         <Link className={'block mb-[20px]'} href={'/'}><IconComponent className={'text-white w-full'} name={'logo-typo'} /></Link>
