@@ -35,7 +35,7 @@ export default function PenComponent({
 
     // Returning JSX
     return (
-        <div className={'relative z-[2] shrink-0 w-[500px] [&>div:first-of-type]:hover:scale-100 [&>div:last-of-type>div:last-of-type>.open-btn]:hover:opacity-100 [&>div:last-of-type>div:last-of-type>.open-btn]:hover:visible [&>div:last-of-type>div:last-of-type>.open-btn]:hover:translate-x-0'}>
+        <div className={'relative z-[2] shrink-0 w-[500px] pen-component'}>
             <div className={'bg-headerBg absolute top-0 left-0 w-full h-full -z-[1] origin-right scale-[.88] rounded-[20px] transition-all duration-500'} />
             <div className={'z-[2]'}>
                 {
@@ -85,7 +85,7 @@ export default function PenComponent({
                                 </div>
                             </div>
                         </div>
-                        <div className={'flex gap-[10px] mt-[20px]'}>
+                        <div className={'flex gap-[10px] mt-[20px] opacity-0 -translate-y-[10px] invisible bottom-btns-holder duration-500 transition-all'}>
                             <button className={'bg-dropdownBg flex items-center gap-[10px] px-[15px] py-[5px] rounded-[8px]'}>
                                 <IconComponent name={'heart'} className={'text-white'} />
                                 <span className={'text-white'}>{likesCount}</span>
