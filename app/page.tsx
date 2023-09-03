@@ -52,6 +52,10 @@ export default function HomePage():ReactNode {
                                 <PenComponent name={'Scott R McGann'} cssCode={'h1 {background-color: red;}'} htmlCode={'<h1>Hello</h1>'} commentsCount={0} likesCount={8} viewCount={181} title={'waterfall fancy'} id={'cantelope'} profileImage={ProfileImage.src} />
                             </div>
                         </div>
+                        <div>
+                            <div><span>Interesting People to Follow</span></div>
+
+                        </div>
                     </div>
                 </main>
             </section>
