@@ -22,8 +22,8 @@ export default function pinnedItemsComponent():ReactNode {
             {
                 (isModalOpened) ? (
                     <>
-                        <div className={'bg-black/80 fixed top-0 left-0 w-full h-full'} onClick={() => setModalOpened(false)} />
-                        <div className={'bg-headerBg flex flex-col fixed top-[50%] left-[50%] translate-x-[-50%] border-2 border-dropdownBg translate-y-[-50%] w-[60vw] h-[70vh] rounded-[10px] overflow-hidden'}>
+                        <div className={'bg-black/80 fixed top-0 left-0 w-full h-full z-30'} onClick={() => setModalOpened(false)} />
+                        <div className={'bg-headerBg flex flex-col fixed top-[50%] left-[50%] translate-x-[-50%] border-2 border-dropdownBg translate-y-[-50%] w-[60vw] h-[70vh] rounded-[10px] overflow-hidden z-30'}>
                             <div className={'overflow-auto'}>
                                 <div className={'flex justify-between items-center p-[10px] border-b-2 border-b-dropdownBg'}>
                                     <span className={'block relative text-[16px] font-bold text-white after:content-[""] after:absolute after:top-[140%] after:left-0 after:w-full after:h-[2px] after:bg-green'}>Pinned Items</span>

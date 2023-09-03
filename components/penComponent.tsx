@@ -35,7 +35,7 @@ export default function PenComponent({
 
     // Returning JSX
     return (
-        <div className={'relative z-[2] [&>div:first-of-type]:hover:scale-100 [&>div:last-of-type>div:last-of-type>.open-btn]:hover:opacity-100 [&>div:last-of-type>div:last-of-type>.open-btn]:hover:visible [&>div:last-of-type>div:last-of-type>.open-btn]:hover:translate-x-0'}>
+        <div className={'relative z-[2] shrink-0 w-[500px] [&>div:first-of-type]:hover:scale-100 [&>div:last-of-type>div:last-of-type>.open-btn]:hover:opacity-100 [&>div:last-of-type>div:last-of-type>.open-btn]:hover:visible [&>div:last-of-type>div:last-of-type>.open-btn]:hover:translate-x-0'}>
             <div className={'bg-headerBg absolute top-0 left-0 w-full h-full -z-[1] origin-right scale-90 rounded-[20px] transition-all duration-500'} />
             <div className={'z-[2]'}>
                 {

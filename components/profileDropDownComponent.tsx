@@ -15,7 +15,7 @@ export default function ProfileDropDownComponent():ReactNode {
     return (
         <div className={'relative'}>
             <button data-opened={isOpened} onClick={() => setOpened(prevState => !prevState)} className={'rounded-[10px] h-[50px] aspect-square green-bar-data-opened bg-[url("../public/assets/img/img-profile.jpg")] bg-cover'} />
-            <div data-opened={isOpened} className={'bg-headerBg py-[10px] absolute right-0 top-[130%] w-[200px] shadow-lg overflow-hidden rounded-[10px] transition-all duration-500 origin-top-right data-[opened="false"]:scale-0 data-[opened="false"]:opacity-0 data-[opened="false"]:invisible data-[opened="true"]:scale-100 data-[opened="true"]:opacity-100 data-[opened="true"]:visible'}>
+            <div data-opened={isOpened} className={'bg-headerBg py-[10px] absolute right-0 top-[130%] w-[200px] shadow-lg overflow-hidden rounded-[10px] transition-all duration-500 origin-top-right data-[opened="false"]:scale-0 data-[opened="false"]:opacity-0 data-[opened="false"]:invisible data-[opened="true"]:scale-100 data-[opened="true"]:opacity-100 data-[opened="true"]:visible z-20'}>
                 <ul>
                     <li><a href="#"><button className={'py-[5px] px-[15px] text-[13px] transition-all bg-headerBg hover:bg-mainBg text-white font-bold truncate w-full text-start'} tabIndex={-1}>Your Work</button></a></li>
                     <li><a href="#"><button className={'py-[5px] px-[15px] text-[13px] transition-all bg-headerBg hover:bg-mainBg text-white font-bold truncate w-full text-start'} tabIndex={-1}>Profile</button></a></li>
