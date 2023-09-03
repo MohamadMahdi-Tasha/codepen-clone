@@ -9,7 +9,7 @@
     --gradiant: 70deg,hsl(196.18deg 100% 52.75%),hsl(49.32deg 100% 62.55%),hsl(274.88deg 70.49% 64.12%),hsl(139.41deg 58.62% 54.51%);
 }
 
-.before-gradiant-bar::before {background: linear-gradient(var(--gradiant));}
+.before-gradiant-bar::before, .bg-gradiant-bar  {background: linear-gradient(var(--gradiant));}
 .before-gradiant-bar {@apply before:content-[""] before:w-full before:h-[2px] before:block;}
 .custom-scrollbar::-webkit-scrollbar {background-color: transparent;width: 8px;}
 .custom-scrollbar::-webkit-scrollbar-thumb {@apply bg-dropdownBg}
