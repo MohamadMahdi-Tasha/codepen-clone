@@ -30,7 +30,7 @@ export default function HomePage():ReactNode {
         <div className={'flex'}>
             <HeaderComponent />
             <section className={'w-full bg-mainBg h-[100vh] overflow-x-hidden overflow-y-auto'}>
-                <div className={'p-[20px]'}>
+                <div className={'lg:p-[20px] p-[10px]'}>
                     <header className={'flex gap-[15px] mb-[20px]'}>
                         <SearchComponent />
                         <PinnedItemsComponent />
@@ -66,7 +66,7 @@ export default function HomePage():ReactNode {
                             </div>
                             <div>
                                 <div className={'border-b-2 border-b-dropdownBg pb-[10px] mb-[30px]'}><span className={'text-[20px] font-bold text-white'}>Interesting People to Follow</span></div>
-                                <div className={'grid grid-cols-3 gap-[30px]'}>
+                                <div className={'grid lg:grid-cols-2 grid-cols-1 gap-[30px]'}>
                                     {
                                         users.map((item:any) => (
                                             <PeopleProfileComponent profileImage={item.profileImage}
