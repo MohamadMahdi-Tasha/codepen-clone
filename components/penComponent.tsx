@@ -50,7 +50,7 @@ export default function PenComponent({
 
                 <div className={'p-[20px]'}>
                     <a className={'block mb-[20px]'} href="#">
-                        <div className={'h-[250px] bg-black rounded-[20px] overflow-hidden'}
+                        <div className={'h-[250px] bg-white rounded-[20px] overflow-hidden'}
                              dangerouslySetInnerHTML={{
                                  __html: `<html><head><style>${cssCode}</style></head><body>${htmlCode}</body></html>`
                              }} />

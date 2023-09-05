@@ -33,8 +33,8 @@ const appSlice:Slice = createSlice({
                         pens: [
                             {
                                 isPickedByCodePen: false,
-                                htmlCode: '<img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg" alt="Logo Of Anonymous Group" />',
-                                cssCode: 'img {width: 100px;height: 100px;border-radius: 100%}',
+                                htmlCode: '<img style="width: 100px;height: 100px;border-radius: 100%;margin-inline: auto;margin-top: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg" alt="Logo Of Anonymous Group" />',
+                                cssCode: '',
                                 name: 'Expect Us | Anonymous',
                                 likesCount: 1002344234217,
                                 commentsCount: 112345687,
@@ -47,8 +47,8 @@ const appSlice:Slice = createSlice({
                 pens: [
                     {
                         isPickedByCodePen: true,
-                        htmlCode: '<h1>Waterfall Fancy</h1>',
-                        cssCode: 'h1 {font-weight: 700;color: red;text-align:center;}',
+                        htmlCode: '<h1 style="font-weight: 700;color: red;text-align:center;margin-top: 20px;">Waterfall Fancy</h1>',
+                        cssCode: '',
                         name: 'Waterfall Fancy',
                         likesCount: 536,
                         commentsCount: 536,
@@ -92,8 +92,8 @@ const appSlice:Slice = createSlice({
                                 pens: [
                                     {
                                         isPickedByCodePen: false,
-                                        htmlCode: '<img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg" alt="Logo Of Anonymous Group" />',
-                                        cssCode: 'img {width: 100px;height: 100px;border-radius: 100%}',
+                                        htmlCode: '<img style="width: 100px;height: 100px;border-radius: 100%;margin-inline: auto;margin-top: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg" alt="Logo Of Anonymous Group" />',
+                                        cssCode: '',
                                         name: 'Expect Us | Anonymous',
                                         likesCount: 1002344234217,
                                         commentsCount: 112345687,
@@ -106,8 +106,8 @@ const appSlice:Slice = createSlice({
                         pens: [
                             {
                                 isPickedByCodePen: true,
-                                htmlCode: '<h1>Waterfall Fancy</h1>',
-                                cssCode: 'h1 {font-weight: 700;color: red;text-align:center;}',
+                                htmlCode: '<h1 style="font-weight: 700;color: red;text-align:center;margin-top: 20px;">Waterfall Fancy</h1>',
+                                cssCode: '',
                                 name: 'Waterfall Fancy',
                                 likesCount: 536,
                                 commentsCount: 536,
@@ -121,8 +121,8 @@ const appSlice:Slice = createSlice({
                 pens: [
                     {
                         isPickedByCodePen: false,
-                        htmlCode: '<img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg" alt="Logo Of Anonymous Group" />',
-                        cssCode: 'img {width: 100px;height: 100px;border-radius: 100%}',
+                        htmlCode: '<img style="width: 100px;height: 100px;border-radius: 100%;margin-inline: auto;margin-top: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg" alt="Logo Of Anonymous Group" />',
+                        cssCode: '',
                         name: 'Expect Us | Anonymous',
                         likesCount: 1002344234217,
                         commentsCount: 112345687,
